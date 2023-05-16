@@ -13,17 +13,15 @@ defineProps({
 
   <div class="container">
     <p>This is my X3D scene</p>
-    <x3d width='500px' height='400px'>
+    <x3d width='466px' height='233px' showStat="true">
       <scene>
-        <shape>
-          <appearance>
-            <material diffuseColor='1 0 0'></material>
-          </appearance>
-          <box></box>
-        </shape>
+        <viewpoint description="Entry" position="0 1 -3.5" orientation="0 1 0 3.14" />
+        <inline mapDEFToID="true" url="Deer.x3d">
+        </inline>
       </scene>
     </x3d>
   </div>
+
 </template>
 
 <style scoped>
